@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Add Queue Item",
+      "activityId": "AddQueueItem_3",
+      "resource": "queue",
+      "key": "ITI.WorkItemsData",
+      "id": "queueITI.WorkItemsDataITIFalseWorkItemsDataFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "ITI",
+          "isExpression": false,
+          "displayName": "Folder Path"
+        },
+        "name": {
+          "defaultValue": "WorkItemsData",
+          "isExpression": false,
+          "displayName": "Queue name"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}
