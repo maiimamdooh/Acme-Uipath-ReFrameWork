@@ -1,4 +1,25 @@
 {
   "version": "2.0",
-  "resources": []
+  "resources": [
+    {
+      "activityDisplayName": "Send Email",
+      "activityId": "SendEmailConnections_1",
+      "resource": "Connection",
+      "key": "7e221541-3746-408f-9a7e-e8fdff9b86bc",
+      "id": "Connection7e221541-3746-408f-9a7e-e8fdff9b86bc7e221541-3746-408f-9a7e-e8fdff9b86bcFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "7e221541-3746-408f-9a7e-e8fdff9b86bc",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    }
+  ]
 }

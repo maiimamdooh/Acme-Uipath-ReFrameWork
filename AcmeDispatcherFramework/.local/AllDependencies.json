@@ -5513,6 +5513,19 @@
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
+      },
+      "Witrics.Orchestrator.Activities/1.0.16": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.System.Activities": "22.10.1"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/Witrics.Orchestrator.Activities.dll": {},
+          "lib/net6.0/Witrics.Shared.dll": {}
+        }
       }
     },
     "net8.0-windows7.0/win-x64": {
@@ -10896,6 +10909,19 @@
           "lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
+        }
+      },
+      "Witrics.Orchestrator.Activities/1.0.16": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.System.Activities": "22.10.1"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/Witrics.Orchestrator.Activities.dll": {},
+          "lib/net6.0/Witrics.Shared.dll": {}
         }
       }
     }
@@ -21380,6 +21406,23 @@
         "uipath.vision.3.16.0.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
+    },
+    "Witrics.Orchestrator.Activities/1.0.16": {
+      "sha512": "hqCmzFA64vygFaCfm52YZtx1ilNkYxi2dSk03OQOFlpTD7So7ZpeUWvVLdZa5/IPvQs1I3FcQSvfulyzQLPNyA==",
+      "type": "package",
+      "path": "witrics.orchestrator.activities/1.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/Witrics.Orchestrator.Activities.dll",
+        "lib/net461/Witrics.Shared.dll",
+        "lib/net6.0/Witrics.Orchestrator.Activities.dll",
+        "lib/net6.0/Witrics.Shared.dll",
+        "readme.md",
+        "witrics.orchestrator.activities.1.0.16.nupkg.sha512",
+        "witrics.orchestrator.activities.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -21388,7 +21431,8 @@
       "UiPath.Excel.Activities >= 3.2.1 <= 3.2.1",
       "UiPath.System.Activities >= 25.10.0 <= 25.10.0",
       "UiPath.Testing.Activities >= 25.10.0 <= 25.10.0",
-      "UiPath.UIAutomation.Activities >= 25.10.16 <= 25.10.16"
+      "UiPath.UIAutomation.Activities >= 25.10.16 <= 25.10.16",
+      "Witrics.Orchestrator.Activities >= 1.0.16 <= 1.0.16"
     ]
   },
   "packageFolders": {
@@ -21397,11 +21441,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "RoboticEnterpriseFramework",
-      "projectName": "RoboticEnterpriseFramework",
-      "projectPath": "D:\\Mai\\UiPath\\RoboticEnterpriseFramework\\.local",
+      "projectUniqueName": "dispatcherAcmeFramWork",
+      "projectName": "dispatcherAcmeFramWork",
+      "projectPath": "D:\\Mai\\UiPath\\Acme-Uipath-Reframework\\AcmeDispatcherFramework\\.local",
       "packagesPath": "C:\\Users\\hebam\\.nuget\\packages\\",
-      "outputPath": "D:\\Mai\\UiPath\\RoboticEnterpriseFramework\\.local",
+      "outputPath": "D:\\Mai\\UiPath\\Acme-Uipath-Reframework\\AcmeDispatcherFramework\\.local",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -21432,6 +21476,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[25.10.16, 25.10.16]"
+          },
+          "Witrics.Orchestrator.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.16, 1.0.16]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\hebam\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"

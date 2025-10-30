@@ -25,7 +25,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "AcmeTest/HomePage.xaml",
+      "Path": "AcmeDispatcher/ExtractData.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -33,15 +33,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "AcmeTest/ExtractData.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "AcmeTest/LancheAcme.xaml",
+      "Path": "AcmeDispatcher/AcmeLogin.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -81,7 +73,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "AcmeTest/uploadData.xaml",
+      "Path": "AcmeDispatcher/AcmeLogOut.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -89,7 +81,31 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "AcmeTest/AcmeLogOut.xaml",
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AcmeDispatcher/HomePage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Geniric/uploadToQueue.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
