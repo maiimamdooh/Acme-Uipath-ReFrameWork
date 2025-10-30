@@ -129,7 +129,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Descripions: open update pop up add comenet and change status to completed, then send a report with the status of each transaction if it success or not , and if fail send the reason&#xA;preConditions:  check url not null " DisplayName="AcmeUpdateItemPopUp" sap:VirtualizedContainerService.HintSize="1069,3381" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Descripions: open update pop up add comenet and change status to completed, then send a report with the status of each transaction if it success or not , and if fail send the reason&#xA;preConditions:  check url not null " DisplayName="AcmeUpdateItemPopUp" sap:VirtualizedContainerService.HintSize="1175,3643" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="IdCell" />
       <Variable x:TypeArguments="x:String" Name="TypeCell" />
@@ -149,18 +149,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654,3208" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654,3470" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="652,2984" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="652,3246" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="618,2924" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_RetryNo]" RetryInterval="[in_RetryTime]">
+          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="618,3186" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_RetryNo]" RetryInterval="[in_RetryTime]">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="616,2726" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="616,2988" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -211,15 +211,15 @@
                       </If.Else>
                     </If>
                   </Sequence>
-                  <Sequence DisplayName="Action - update" sap:VirtualizedContainerService.HintSize="582,2561" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Action - update" sap:VirtualizedContainerService.HintSize="582,2823" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548,2421" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548,2683" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                       <TryCatch.Try>
-                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="546,1600" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="546,1657" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -302,7 +302,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NApplicationCard>
-                          <Sequence sap:VirtualizedContainerService.HintSize="512,663" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence sap:VirtualizedContainerService.HintSize="512,720" sap2010:WorkflowViewState.IdRef="Sequence_19">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -341,7 +341,25 @@
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
                             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{IdCell,TypeCell,&quot;Successful&quot;,ReasonCell}]" DataTable="[in_dtDataReport]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478,221" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
-                            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[in_dtDataReport]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="478,139" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="Data\Output\AcmeReport.xlsx" />
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[in_dtDataReport]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1-Success" WorkbookPath="Data\Output\AcmeWorkItemData2.xlsx" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                            <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[in_dtDataReport]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="478,139" sap2010:WorkflowViewState.IdRef="AppendRange_3" SheetName="Sheet1" WorkbookPath="Data\Output\acmeReport.xlsx" />
                           </Sequence>
                           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                             <ui:CommentOut.Body>
@@ -399,7 +417,7 @@
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,622" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,827" sap2010:WorkflowViewState.IdRef="Sequence_13">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -414,7 +432,26 @@
                                 </Assign.Value>
                               </Assign>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="512,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;id&quot; + in_TransactionItem.SpecificContent(&quot;WIID&quot;).ToString() + &quot; is failed due to &quot; + New System.Exception().ToString()]" />
-                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{IdCell,TypeCell,&quot;Fail&quot;,ReasonCell}]" DataTable="[in_dtDataReport]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="512,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{IdCell,TypeCell,&quot;Fail&quot;,ReasonCell}]" DataTable="[in_dtDataReport]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="512,221" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                              <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[in_dtDataReport]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="512,148" sap2010:WorkflowViewState.IdRef="AppendRange_4" SheetName="Sheet1" WorkbookPath="Data\Output\acmeReport.xlsx" />
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,48" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[in_dtDataReport]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet2-Fail" WorkbookPath="Data\Output\AcmeWorkItemData2.xlsx" />
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
                             </Sequence>
                           </ActivityAction>
                         </Catch>

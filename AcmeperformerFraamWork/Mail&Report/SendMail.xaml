@@ -105,7 +105,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendMail" sap:VirtualizedContainerService.HintSize="1069,1748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendMail" sap:VirtualizedContainerService.HintSize="1175,1748" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,7 +156,7 @@
                     <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&amp;quot;Hi Ashhhh,All transaction in the queue are done successfully&amp;quot;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="7e221541-3746-408f-9a7e-e8fdff9b86bc" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,505" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Queue trigger" To="[New String(){&quot;ashrakathamza95@gmail.com&quot;}]" UseConnectionService="True">
                       <uga:SendEmailConnections.ArgumentAttachments>
                         <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
-                          <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("Data\\Output\\AcmeReport.xlsx")]</InArgument>
+                          <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("Data\\Output\\acmeReport.xlsx")]</InArgument>
                         </scg:List>
                       </uga:SendEmailConnections.ArgumentAttachments>
                       <uga:SendEmailConnections.AttachmentsBackup>

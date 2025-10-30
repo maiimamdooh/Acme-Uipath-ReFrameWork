@@ -77,7 +77,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="1069,924" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="1175,811" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="RetryNo" />
       <Variable x:TypeArguments="x:TimeSpan" Name="RetryTime" />
@@ -126,7 +126,6 @@
         <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_RertyTime">[RetryTime]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="478,113" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="Data\Output\AcmeReport.xlsx" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="Sequence_3">

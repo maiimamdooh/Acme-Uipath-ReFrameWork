@@ -2,9 +2,9 @@ AcmePerformer/AcmeLogin.xaml|638974289124620605
 AcmePerformer/AcmeHomePage.xaml|638973543418178394
 Framework/GetTransactionData.xaml|638869745880000000
 Framework/InitAllApplications.xaml|638974352896461070
-Framework/CloseAllApplications.xaml|638974366428037297
+Framework/CloseAllApplications.xaml|638974385573166093
 Framework/KillAllProcesses.xaml|638973408920358622
-AcmePerformer/UpdateItem.xaml|638974357734791577
+AcmePerformer/UpdateItem.xaml|638974399762383531
 Framework/InitAllSettings.xaml|638869745880000000
 AcmePerformer/AcmeWorkItems(Autosaved).xaml|638974351324922139
 Mail&Report/bulidDataTable.xaml|638974352895074477
@@ -15,4 +15,4 @@ Framework/TakeScreenshot.xaml|638869745880000000
 Mail&Report/CreateDataReport.xaml|638973394480820478
 Framework/SetTransactionStatus.xaml|638869745880000000
 Main.xaml|638974352840456365
-Mail&Report/SendMail.xaml|638974358186154149
+Mail&Report/SendMail.xaml|638974406883704686
