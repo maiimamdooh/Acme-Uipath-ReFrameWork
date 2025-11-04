@@ -7,12 +7,20 @@
 ##  Project Overview
 
 This project implements a **complete UiPath REFramework solution** designed for **queue-based automation** using the **ACME website** as a case study.  
+
+
+This project starts **automatically** when the **robot account receives an email** with a specific subject line.  
+
+The **Email Event Trigger** in **UiPath Orchestrator** monitors the robot mailbox, and when an incoming message matches the configured subject (e.g., `"Start Dispatcher"`), the trigger launches the **Dispatcher process**.
+
 It includes two interconnected processes:
 
 -  **Dispatcher** – Extracts data from ACME and uploads it to an **Orchestrator Queue**.  
 -  **Performer** – Processes each queued item, performs business actions, and generates a report.
 
 Both processes communicate seamlessly through a **Queue Trigger** in Orchestrator — ensuring that once the Dispatcher finishes uploading data, the Performer starts automatically.
+
+This design allows **hands-free automation** — no manual start needed.
 
 ---
 
